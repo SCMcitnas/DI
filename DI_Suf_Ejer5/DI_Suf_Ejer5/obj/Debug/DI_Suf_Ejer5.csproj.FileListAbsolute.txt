@@ -1,0 +1,11 @@
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\bin\Debug\DI_Suf_Ejer5.exe.config
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\bin\Debug\DI_Suf_Ejer5.exe
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\bin\Debug\DI_Suf_Ejer5.pdb
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.csproj.AssemblyReference.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.csproj.SuggestedBindingRedirects.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.Form1.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.Properties.Resources.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.csproj.GenerateResource.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.exe
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer5\DI_Suf_Ejer5\obj\Debug\DI_Suf_Ejer5.pdb
