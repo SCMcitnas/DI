@@ -1,0 +1,14 @@
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\bin\Debug\DI_Suf_Ejer6.exe.config
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\bin\Debug\DI_Suf_Ejer6.exe
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\bin\Debug\DI_Suf_Ejer6.pdb
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.csproj.AssemblyReference.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.csproj.SuggestedBindingRedirects.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.Contraseña.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.Properties.Resources.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.csproj.GenerateResource.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.exe
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.pdb
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.Form1.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.Guardar.resources
+C:\Users\Santiago\Source\Repos\DI_Suf_Ejer6\DI_Suf_Ejer6\obj\Debug\DI_Suf_Ejer6.Leer.resources
