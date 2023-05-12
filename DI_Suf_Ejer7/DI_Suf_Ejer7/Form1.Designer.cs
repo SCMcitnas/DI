@@ -28,35 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelTextBox1 = new DI_Suf_Ejer7.LabelTextBox();
+            this.labelTextBox1 = new ComponenteEjer7.LabelTextBox();
             this.SuspendLayout();
             // 
             // labelTextBox1
             // 
-            this.labelTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.labelTextBox1.Location = new System.Drawing.Point(29, 48);
             this.labelTextBox1.Name = "labelTextBox1";
-            this.labelTextBox1.Posicion = DI_Suf_Ejer7.LabelTextBox.ePosicion.IZQUIERDA;
-            this.labelTextBox1.Separacion = 5;
-            this.labelTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.labelTextBox1.Posicion = ComponenteEjer7.LabelTextBox.ePosicion.IZQUIERDA;
+            this.labelTextBox1.PswChr = '\0';
+            this.labelTextBox1.Separacion = 13;
+            this.labelTextBox1.Size = new System.Drawing.Size(148, 20);
             this.labelTextBox1.TabIndex = 0;
-            this.labelTextBox1.TextLbl = "Algo";
+            this.labelTextBox1.TextLbl = "label1";
             this.labelTextBox1.TextTxt = "";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.labelTextBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private LabelTextBox labelTextBox1;
+        private ComponenteEjer7.LabelTextBox labelTextBox1;
     }
 }
 

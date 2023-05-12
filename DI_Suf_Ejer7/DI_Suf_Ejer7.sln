@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_Suf_Ejer7", "DI_Suf_Ejer7\DI_Suf_Ejer7.csproj", "{0A80147F-C993-4C30-9F46-6661E0EDE45E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponenteEjer7", "ComponenteEjer7\ComponenteEjer7.csproj", "{ED4348EF-6A5C-43FE-8EB5-35D32C64ACA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A80147F-C993-4C30-9F46-6661E0EDE45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A80147F-C993-4C30-9F46-6661E0EDE45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A80147F-C993-4C30-9F46-6661E0EDE45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4348EF-6A5C-43FE-8EB5-35D32C64ACA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4348EF-6A5C-43FE-8EB5-35D32C64ACA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4348EF-6A5C-43FE-8EB5-35D32C64ACA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4348EF-6A5C-43FE-8EB5-35D32C64ACA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

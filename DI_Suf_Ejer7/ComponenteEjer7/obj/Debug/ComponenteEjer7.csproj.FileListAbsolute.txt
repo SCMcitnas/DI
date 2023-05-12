@@ -1,0 +1,8 @@
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\bin\Debug\ComponenteEjer7.dll
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\bin\Debug\ComponenteEjer7.pdb
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.csproj.AssemblyReference.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.csproj.GenerateResource.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.dll
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.pdb
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer7\ComponenteEjer7\obj\Debug\ComponenteEjer7.LabelTextBox.resources

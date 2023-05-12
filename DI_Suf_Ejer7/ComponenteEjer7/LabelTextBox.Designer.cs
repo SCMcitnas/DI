@@ -1,4 +1,4 @@
-﻿namespace DI_Suf_Ejer7
+﻿namespace ComponenteEjer7
 {
     partial class LabelTextBox
     {
@@ -35,7 +35,7 @@
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(45, 73);
+            this.lbl.Location = new System.Drawing.Point(40, 39);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(35, 13);
             this.lbl.TabIndex = 0;
@@ -43,10 +43,11 @@
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(86, 66);
+            this.txt.Location = new System.Drawing.Point(81, 36);
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(100, 20);
             this.txt.TabIndex = 1;
+            this.txt.TextChanged += new System.EventHandler(this.txt_TextChanged);
             this.txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_KeyUp);
             // 
             // LabelTextBox
@@ -56,9 +57,8 @@
             this.Controls.Add(this.txt);
             this.Controls.Add(this.lbl);
             this.Name = "LabelTextBox";
-            this.Size = new System.Drawing.Size(242, 150);
+            this.Size = new System.Drawing.Size(211, 97);
             this.SizeChanged += new System.EventHandler(this.LabelTextBox_SizeChanged);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

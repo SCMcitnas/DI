@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace DI_Suf_Ejer7
+namespace ComponenteEjer7
 {
     public partial class LabelTextBox : UserControl
     {
@@ -36,6 +36,7 @@ namespace DI_Suf_Ejer7
                 {
                     posicion = value;
                     recolocar();
+                    Refresh();
                 }
                 else
                 {
@@ -61,6 +62,8 @@ namespace DI_Suf_Ejer7
                 {
                     separacion = value;
                     recolocar();
+                    Refresh();
+
                 }
                 else
                 {
@@ -112,19 +115,23 @@ namespace DI_Suf_Ejer7
                     txt.Location = new Point(lbl.Width + Separacion, 0);
                     //Establecemos ancho del Textbox
                     //(la label tiene ancho por autosize)
-                    txt.Width = this.Width - lbl.Width - Separacion;
+                    //Cambiamos: txt.Width = this.Width - lbl.Width - Separacion;
                     //Establecemos altura del componente
                     this.Height = Math.Max(txt.Height, lbl.Height);
+
+                    this.Width = txt.Width + lbl.Width + Separacion;
                     break;
                 case ePosicion.DERECHA:
                     //Establecemos posición del componente txt
                     txt.Location = new Point(0, 0);
                     //Establecemos ancho del Textbox
-                    txt.Width = this.Width - lbl.Width - Separacion;
+                    //Cambiamos: txt.Width = this.Width - lbl.Width - Separacion;
                     //Establecemos posición del componente lbl
                     lbl.Location = new Point(txt.Width + Separacion, 0);
                     //Establecemos altura del componente (Puede sacarse del switch)
                     this.Height = Math.Max(txt.Height, lbl.Height);
+
+                    this.Width = txt.Width + lbl.Width + Separacion;
                     break;
             }
         }
@@ -138,7 +145,8 @@ namespace DI_Suf_Ejer7
 
         private void txt_KeyUp(object sender, KeyEventArgs e)
         {
-            lbl.Text = e.KeyData.ToString();
+            this.OnKeyUp(e);
+           // lbl.Text = e.KeyData.ToString();
         }
 
         [Category("Ejercicio")]
@@ -153,5 +161,23 @@ namespace DI_Suf_Ejer7
             }
         }
 
+        private void txt_TextChanged(object sender, EventArgs e)
+        {
+            OnTxtChanged(EventArgs.Empty);
+        }
+
+        [Category("Ejercicio")]
+        [Description("Caracter de contraseña en el textbox")]
+        public char PswChr
+        {
+            set
+            {
+                txt.PasswordChar = value;
+            }
+            get
+            {
+                return txt.PasswordChar;
+            }
+        }
     }
 }
