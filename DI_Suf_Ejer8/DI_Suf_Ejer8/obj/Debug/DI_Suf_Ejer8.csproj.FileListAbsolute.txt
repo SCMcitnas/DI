@@ -26,3 +26,17 @@ C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Eje
 C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.CopyComplete
 C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.exe
 C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.pdb
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\bin\Debug\DI_Suf_Ejer8.exe.config
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\bin\Debug\DI_Suf_Ejer8.exe
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\bin\Debug\DI_Suf_Ejer8.pdb
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\bin\Debug\ComponenteEjer8.dll
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\bin\Debug\ComponenteEjer8.pdb
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.AssemblyReference.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.SuggestedBindingRedirects.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.Form1.resources
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.Properties.Resources.resources
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.GenerateResource.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.CoreCompileInputs.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.csproj.CopyComplete
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.exe
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer8\DI_Suf_Ejer8\obj\Debug\DI_Suf_Ejer8.pdb

@@ -14,6 +14,8 @@ namespace DI_Suf_Ejer8
     {
         static bool gradiente = false;
         static bool forma = false;
+        static bool cambio = false;
+        static bool click = false;
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +51,50 @@ namespace DI_Suf_Ejer8
                 componente1.Marca = ComponenteEjer8.Componente.eMarca.Circulo;
                 forma = true;
                 componente1.Refresh();
+            }
+        }
+
+        private void componente1_ClickEnMarca(object sender, EventArgs e)
+        {
+            if (click)
+            {
+                this.Text = "click1";
+                click = false;
+            }
+            else
+            {
+                this.Text = "click2";
+                click = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (cambio)
+            {
+                componente1.Marca = ComponenteEjer8.Componente.eMarca.Nada;
+                cambio = false;
+                componente1.Refresh();
+            }
+            else
+            {
+                componente1.Marca = ComponenteEjer8.Componente.eMarca.Imagen;
+                cambio = true;
+                componente1.Refresh();
+            }
+        }
+
+        private void componente1_ClickEnMarca_1(object sender, EventArgs e)
+        {
+            if (click)
+            {
+                this.Text = "click1";
+                click = false;
+            }
+            else
+            {
+                this.Text = "click2";
+                click = true;
             }
         }
     }

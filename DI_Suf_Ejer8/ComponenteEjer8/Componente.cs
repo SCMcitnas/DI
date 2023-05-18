@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,39 +35,43 @@ namespace ComponenteEjer8
             InitializeComponent();
         }
 
+        int grosor;
+        int h;
+
         protected override void OnPaint(PaintEventArgs pe)
         {
             base.OnPaint(pe);
             Graphics g = pe.Graphics;
             GraphicsPath path = new GraphicsPath();
             RectangleF rect = new RectangleF(0,0, this.Width, this.Height);
-            
+            Image image=null;
+
 
             path.AddRectangle(rect);
-            int grosor = 0; //Grosor de las líneas de dibujo
+            grosor = 0; //Grosor de las líneas de dibujo
             int offsetX = 0; //Desplazamiento a la derecha del texto
             int offsetY = 0; //Desplazamiento hacia abajo del texto
                              // Altura de fuente, usada como referencia en varias partes
-            int h = this.Font.Height;
+            h = this.Font.Height;
             PathGradientBrush x;
             
+                    x = new PathGradientBrush(path);
+                    Color[] colors = { Color1, Color2};
             switch (Gradiente)
             {
                 case eGradiente.Si:
-                    x = new PathGradientBrush(path);
-                    Color[] colors = { Color.Blue, Color.Green};
-                    x.SurroundColors = colors;
-                    pe.Graphics.FillRectangle(x, rect);
+                    //x.SurroundColors = colors;
+                    //pe.Graphics.FillRectangle(x, rect);
 
                     break;
 
                 case eGradiente.No:
-                    x = new PathGradientBrush(path);
-                    Color[] color = { this.BackColor};
-                    x.SurroundColors = color;
-                    pe.Graphics.FillRectangle(x, rect);
+                    //x = new PathGradientBrush(path);
+                      colors = new Color[] { this.BackColor};
                     break;
             }
+                    x.SurroundColors = colors;
+                    pe.Graphics.FillRectangle(x, rect);
 
             //Esta propiedad provoca mejoras en la apariencia o en la eficiencia
             // a la hora de dibujar
@@ -93,13 +98,26 @@ namespace ComponenteEjer8
                     lapiz.Dispose();
                     break;
                 case eMarca.Imagen:
-                    String direccion = Environment.GetEnvironmentVariable("homepath");
-                    Image image = Image.FromFile(direccion+ "\\Source\\Repos\\DI\\DI_Suf_Ejer8\\tree-736885_1280.jpg");
                     
-                    pe.Graphics.DrawImage(image, 0,0,this.Width/5,this.Height);
-                    offsetX = this.Width / 5;
+                    try
+                    {
+                        String direccion = Environment.GetEnvironmentVariable("homepath");
+                        image = PathImg;
+                        grosor = h * 2;
+                        pe.Graphics.DrawImage(image, 0, 0, grosor, h);
+                        offsetX = grosor/5;
+                    }
+                    catch(FileNotFoundException ex)   
+                    {
+                        grosor = 0;
+                    }
+                    catch(ArgumentNullException ex)
+                    {
+                        grosor = 0;
+                    }
                     break;
             }
+
             //Finalmente pintamos el Texto; desplazado si fuera necesario
             SolidBrush b = new SolidBrush(this.ForeColor);
             g.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
@@ -138,6 +156,7 @@ namespace ComponenteEjer8
             set
             {
                 gradiente = value;
+                this.Refresh();
             }
             get
             {
@@ -145,14 +164,71 @@ namespace ComponenteEjer8
             }
         }
 
+        private Color color1 = Color.Red;
+        [Category("Appearance")]
+        [Description("Indica un color del gradiante")]
+        public Color Color1
+        {
+            set
+            {
+                color1 = value;
+                this.Refresh();
+            }
+            get
+            {
+                return color1;
+            }
+        }
+
+        private Color color2 = Color.Blue;
+        [Category("Appearance")]
+        [Description("Indica otro color del gradiante")]
+        public Color Color2
+        {
+            set
+            {
+                color2 = value;
+                this.Refresh();
+            }
+            get
+            {
+                return color2;
+            }
+        }
+
+        private Image path = Image.FromFile(Environment.GetEnvironmentVariable("homepath")+"\\Source\\Repos\\DI\\DI_Suf_Ejer8\\imagen.jpg");
+        [Category("Appearance")]
+        [Description("Indica el path de la imagen de la marca")]
+        public Image PathImg
+        {
+            set
+            {
+                path = value;
+                this.Refresh();
+            }
+            get
+            {
+                return path;
+            }
+        }
+
+
         [Category("Ejercicio")]
         [Description("Se lanza cuando se pulsa el componente")]
         public event EventHandler ClickEnMarca;
 
-        protected virtual void OnClickMarca(object sender, EventArgs e)
+        protected virtual void OnClickMarca(EventArgs e)
         {
             if(ClickEnMarca != null){
-                
+                ClickEnMarca(this, e);
+            }
+        }
+
+        private void EtiquetaAviso_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(marca != eMarca.Nada && e.X<grosor+h && e.Y<h)
+            {
+                OnClickMarca(EventArgs.Empty);
             }
         }
     }
