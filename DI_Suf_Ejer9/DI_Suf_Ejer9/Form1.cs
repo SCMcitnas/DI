@@ -12,7 +12,8 @@ namespace DI_Suf_Ejer9
 {
     public partial class Form1 : Form
     {
-        static int intervalo=0;
+        private bool play = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -27,9 +28,35 @@ namespace DI_Suf_Ejer9
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            intervalo = Convert.ToInt16(comboBox1.SelectedItem.ToString());
-            userControl11.intervalC = intervalo;
+            timer1.Interval = Convert.ToInt16(comboBox1.SelectedItem.ToString());
             userControl11.Refresh();
+        }
+
+        private void userControl11_DesbordaTiempo(object sender, EventArgs e)
+        {
+
+            userControl11.MM++;
+            userControl11.Refresh();
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            userControl11.SS++;
+        }
+
+        private void userControl11_PlayClick(object sender, EventArgs e)
+        {
+            if (play)
+            {
+                timer1.Stop();
+                play = false;
+            }
+            else
+            {
+                timer1.Start();
+                play = true;
+            }
         }
     }
 }

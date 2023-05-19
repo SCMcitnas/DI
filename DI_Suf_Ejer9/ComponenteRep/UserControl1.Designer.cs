@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lblTime = new System.Windows.Forms.Label();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblTime
@@ -45,16 +43,13 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.BackgroundImage = global::ComponenteRep.Properties.Resources.pause;
             this.btnPlay.Location = new System.Drawing.Point(35, 13);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(53, 51);
             this.btnPlay.TabIndex = 1;
             this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.PlayClick);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // UserControl1
             // 
@@ -73,6 +68,5 @@
 
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Timer timer1;
     }
 }

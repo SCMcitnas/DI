@@ -10,98 +10,140 @@ using System.Windows.Forms;
 
 namespace ComponenteRep
 {
-    public partial class UserControl1: UserControl
+    public partial class UserControl1 : UserControl
     {
         public UserControl1()
         {
             InitializeComponent();
-            timer1.Interval=1000;
-            lblTime.Text = String.Format("{0,2:00}:{1,2:00}", minutos, segundos);
 
-            imagen = Image.FromFile(direccion + "\\Source\\Repos\\DI\\DI_Suf_Ejer9\\play.jpg");
-            btnPlay.BackgroundImage = imagen;
+            angulo = segundos * 6;
+            Refresh();
+
+            lblTime.Text = String.Format("{0,2:00}:{1,2:00}", minutos, segundos);
+            btnPlay.BackgroundImage = ComponenteRep.Properties.Resources.play;
             btnPlay.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
-        int intervalo=1000;
-        static bool play = false;
-        static int segundos = 0;
-        static int minutos = 0;
-        static int angulo = 0;
-        static int segundosGuardados = 0;
+        private bool play = false;
+        private int segundos = 0;
+        private int minutos = 0;
+        private int angulo = 0;
 
-        String direccion = Environment.GetEnvironmentVariable("homepath");
-        Image imagen;
-        
-
-        protected virtual void PlayClick(object sender, EventArgs e)
+        private void btnPlay_Click(object sender, EventArgs e)
         {
             if (play)
             {
-                
-                imagen = Image.FromFile(direccion + "\\Source\\Repos\\DI\\DI_Suf_Ejer9\\play.jpg");
-                timer1.Stop();
-                btnPlay.BackgroundImage = imagen;
+                btnPlay.BackgroundImage = ComponenteRep.Properties.Resources.play;
                 btnPlay.BackgroundImageLayout = ImageLayout.Zoom;
                 play = false;
             }
             else
             {
-                imagen = Image.FromFile(direccion + "\\Source\\Repos\\DI\\DI_Suf_Ejer9\\pause.jpg");
-                timer1.Start();
-                btnPlay.BackgroundImage = imagen;
+                btnPlay.BackgroundImage= ComponenteRep.Properties.Resources.pause;
                 btnPlay.BackgroundImageLayout = ImageLayout.Zoom;
                 play = true;
             }
+
+            OnPlayClick(EventArgs.Empty);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+
+        [Category("Ejercicio")]
+        [Description("Al hacer click en el boton play se activa el evento")]
+        public event EventHandler PlayClick;
+
+        protected virtual void OnPlayClick(EventArgs e)
         {
-            
-            segundos++;
-
-            if(segundos == segundosGuardados + 1)
+            if (PlayClick != null)
             {
-                segundosGuardados = segundos;
-                angulo= angulo + 6;
-                Refresh();
+                PlayClick(this, e);
             }
-
-
-            if (segundos > 59)
-            {
-                this.DesbordaTiempo(sender, e);
-            }
-
-            if (minutos > 59)
-            {
-                minutos = 0;
-            }
-
-            lblTime.Text = String.Format("{0,2:00}:{1,2:00}", minutos, segundos);
         }
 
-        protected virtual void DesbordaTiempo(object sender, EventArgs e)
+
+        [Category("Ejercicio")]
+        [Description("Segundos del reproductor")]
+        public int SS
         {
-            if(segundos > 0)
+            set
             {
-                minutos++;
-                segundos = 0;
-                segundosGuardados = 0;
-                angulo = 0;
-                Refresh();
+                if(value >= 0)
+                {
+                    if (value > 59)
+                    {
+                        OnDesbordaTiempo(EventArgs.Empty);
+                        segundos = value % 60;
+                    }
+                    else
+                    {
+                        segundos = value;
+
+                    }
+                    angulo = segundos * 6;
+                    Refresh();
+
+
+                    lblTime.Text = String.Format("{0,2:00}:{1,2:00}", minutos, segundos);
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+
             }
-            else
+            get
             {
-                throw new ArgumentException();
+                return segundos;
             }
         }
+
+        [Category("Ejercicio")]
+        [Description("Minutos del reproductor")]
+        public int MM
+        {
+            set
+            {
+                if(value >= 0)
+                {
+                    if (value > 59)
+                    {
+                        minutos=0;
+                    }
+                    else
+                    {
+                        minutos = value;
+                    }
+
+
+                    lblTime.Text = String.Format("{0,2:00}:{1,2:00}", minutos, segundos);
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+            }
+            get
+            {
+                return minutos;
+            }
+        }
+
+        [Category("Ejercicio")]
+        [Description("Evento ejecutado cuando se completa un minuto")]
+        public event EventHandler DesbordaTiempo;
+
+        protected virtual void OnDesbordaTiempo(EventArgs e)
+        {
+            if(DesbordaTiempo != null)
+            {
+                DesbordaTiempo(this, e);
+            }
+        }
+
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
-            timer1.Interval = intervalC;
             Graphics g = e.Graphics;
             int grosor = 5;
             Brush br = new SolidBrush(Color.Turquoise);
@@ -109,20 +151,7 @@ namespace ComponenteRep
             g.FillPie(br, 10, 100, 50, 50, 270, angulo);
         }
 
-        [Category("Ejercicio")]
-        [Description("Intervalo del timer")]
-        public int intervalC
-        {
-            get
-            {
-                 return intervalo;
-                
-            }
-            set
-            {
-                intervalo = value;
-                this.Refresh();
-            }
-        }
+
+        
     }
 }
