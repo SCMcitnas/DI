@@ -42,6 +42,12 @@ namespace DI_Suf_Ejer10
 			}
 
 			letasU.Add("");
+
+			Button botonP = new Button();
+			botonP.Text = "prueba";
+			botonP.Size = new Size(50, 50);
+			botonP.Location = new Point(groupBox1.Width / 2, groupBox1.Height-10);
+			groupBox1.Controls.Add(botonP);
 		}
 
 		private void btn_inicio_Click(object sender, EventArgs e)
@@ -174,6 +180,12 @@ namespace DI_Suf_Ejer10
 			start = false;
 
             lbl_Win.Text = "Lo siento, te has ahorcado";
+			dibujoAhorcado1.Refresh();
+			
+
+			
         }
+
+		
 	}
 }

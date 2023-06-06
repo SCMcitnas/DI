@@ -14,3 +14,11 @@ C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csp
 C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.CoreCompileInputs.cache
 C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.dll
 C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.pdb
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\bin\Debug\Componente.dll
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\bin\Debug\Componente.pdb
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.AssemblyReference.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.DibujoAhorcado.resources
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.GenerateResource.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.dll
+C:\Users\Santiago\Source\Repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.pdb

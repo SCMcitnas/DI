@@ -29,8 +29,9 @@ namespace Componente
 			} 
 			set {
 
-
+                this.Refresh();
                 errores = value;
+                
 
                 if (value <= 7)
 				{
@@ -40,6 +41,8 @@ namespace Componente
 				{
                     OnAhorcado(EventArgs.Empty);
                 }
+
+				
 
 			} 
 		}
@@ -114,7 +117,6 @@ namespace Componente
 					break;
 			}
 
-			
 		}
 	}
 }
