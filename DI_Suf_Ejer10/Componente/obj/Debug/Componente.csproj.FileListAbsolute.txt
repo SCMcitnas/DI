@@ -1,0 +1,16 @@
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\bin\Debug\Componente.dll
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\bin\Debug\Componente.pdb
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.AssemblyReference.cache
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.CoreCompileInputs.cache
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.dll
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.pdb
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.DibujoAhorcado.resources
+C:\Users\alumnoinfo\Desktop\perritopiloto\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.GenerateResource.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\bin\Debug\Componente.dll
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\bin\Debug\Componente.pdb
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.AssemblyReference.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.DibujoAhorcado.resources
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.GenerateResource.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.csproj.CoreCompileInputs.cache
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.dll
+C:\Users\citna\source\repos\DI\DI_Suf_Ejer10\Componente\obj\Debug\Componente.pdb
